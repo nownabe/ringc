@@ -58,7 +58,7 @@ spec
 => 0.39999999999999997
 
 >> result.stime
-=> 0.08'``
+=> 0.08
 ```
 
 ## Contributing
