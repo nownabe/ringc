@@ -7,7 +7,6 @@ module Ringc
     attr_accessor :start_time, :finish_time
     attr_reader :status, :stdout, :stderr
     attr_reader :user_time, :system_time
-    attr_reader :children_user_time, :children_system_time
 
     def initialize
     end
@@ -24,23 +23,19 @@ module Ringc
       @stderr = stderr
     end
 
-    def set_times(utime, stime, cutime, cstime)
+    def set_times(utime, stime)
       @user_time   = utime
       @system_time = stime
-      @children_user_time   = cutime
-      @children_system_time = cstime
     end
     alias_method :utime, :user_time
     alias_method :stime, :system_time
-    alias_method :cutime, :children_user_time
-    alias_method :cstime, :children_system_time
 
     def success?
       status == 0
     end
 
     def total_time
-      utime + stime + cutime + cstime
+      utime + stime
     end
     memoize :total_time
     alias_method :total, :total_time

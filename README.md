@@ -48,20 +48,17 @@ spec
 
 => nil
 
+>> result.real
+=> 0.53631
+
 >> result.total
-=> 0.23999999999999994
+=> 0.48
 
 >> result.utime
-=> 0.0
+=> 0.39999999999999997
 
 >> result.stime
-=> 0.0
-
->> result.cutime
-=> 0.19999999999999996
-
->> result.cstime
-=> 0.03999999999999998
+=> 0.08'``
 ```
 
 ## Contributing

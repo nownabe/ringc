@@ -33,8 +33,6 @@ module Ringc
 
       def set_times
         @result.set_times(
-          @finish_times.utime - @start_times.utime,
-          @finish_times.stime - @start_times.stime,
           @finish_times.cutime - @start_times.cutime,
           @finish_times.cstime - @start_times.cstime
         )
