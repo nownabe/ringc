@@ -1,5 +1,7 @@
 # Ringc
 
+[![Gem Version](https://badge.fury.io/rb/ringc.svg)](http://badge.fury.io/rb/ringc)
+
 Ringc executes commands with rich stats.
 
 ## Installation
